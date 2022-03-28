@@ -68,6 +68,7 @@ depends = ""
 [workspace]
 members = [
   ".",
+  "lib/codecs",
   "lib/enrichment",
   "lib/vector-buffers",
   "lib/vector-common",
@@ -249,7 +250,6 @@ logfmt = { version = "0.0.2", default-features = false, optional = true }
 lru = { version = "0.7.3", default-features = false, optional = true }
 maxminddb = { version = "0.22.0", default-features = false, optional = true }
 md-5 = { version = "0.10", optional = true }
-memchr = { version = "2.4", default-features = false, optional = true }
 mongodb = { version = "2.1.0", default-features = false, features = ["tokio-runtime"], optional = true }
 nats = { version = "0.18.1", default-features = false, optional = true }
 nkeys = { version = "0.2.0", optional = true }
@@ -272,7 +272,6 @@ regex = { version = "1.5.5", default-features = false, features = ["std", "perf"
 roaring = { version = "0.9.0", default-features = false, optional = true }
 seahash = { version = "4.1.0", default-features = false, optional = true }
 semver = { version = "1.0.6", default-features = false, features = ["serde", "std"], optional = true }
-smallvec = { version = "1", optional = true, features = ["union"] }
 snafu = { version = "0.7.0", default-features = false, features = ["futures"] }
 snap = { version = "1.0.5", default-features = false, optional = true }
 socket2 = { version = "0.4.4", default-features = false }
@@ -416,7 +415,7 @@ enrichment-tables = ["enrichment-tables-file"]
 enrichment-tables-file = [ "csv", "seahash", "hash_hasher" ]
 
 # Codecs
-codecs = ["value", "smallvec", "memchr"]
+codecs = ["value"]
 
 # Sources
 sources = ["sources-logs", "sources-metrics"]

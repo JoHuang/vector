@@ -1542,6 +1542,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "codecs"
+version = "0.1.0"
+dependencies = [
+ "bytes 1.1.0",
+ "chrono",
+ "derivative",
+ "dyn-clone",
+ "futures 0.3.21",
+ "indoc",
+ "memchr",
+ "serde",
+ "serde_json",
+ "smallvec",
+ "syslog_loose",
+ "tokio",
+ "tokio-util 0.6.8",
+ "tracing 0.1.32",
+ "value",
+ "vector_common",
+ "vector_core",
+]
+
+[[package]]
 name = "codespan-reporting"
 version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -8590,7 +8613,6 @@ dependencies = [
  "lru",
  "maxminddb",
  "md-5 0.10.1",
- "memchr",
  "metrics 0.17.1",
  "metrics-tracing-context",
  "mlua",
@@ -8644,7 +8666,6 @@ dependencies = [
  "serde_with",
  "serde_yaml",
  "sha2 0.10.2",
- "smallvec",
  "smpl_jwt",
  "snafu",
  "snap",
